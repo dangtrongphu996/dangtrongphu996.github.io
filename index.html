@@ -15,11 +15,17 @@
   <nav class="navbar">
     <div class="nav-container">
       <div class="logo">Dang Trong Phu - Backend Developer</div>
-      <ul class="nav-links">
+      <button class="nav-toggle" type="button" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="nuoitoi.html">Nuôi Tôi</a></li>
         <li><a href="#contact" class="btn">Contact</a></li>
       </ul>
     </div>
@@ -58,15 +64,64 @@
   <!-- ABOUT -->
   <section id="about" class="section">
     <h3>About Me</h3>
-    <div class="card">
-      <p>
-        I focus on building backend systems that are maintainable, scalable, and easy to evolve.
-        My experience covers the full development lifecycle, from system design and implementation
-        to deployment, monitoring, and long-term maintenance.
-        
-        Beyond coding, I enjoy working with teams, mentoring developers, and improving development
-        processes to help deliver reliable software efficiently.
-      </p>
+    <div class="about-grid">
+      <div class="card">
+        <li>
+          I am a backend engineer focused on building systems that are stable, scalable, and easy to
+          maintain over the long term. Over the past 7+ years, I have worked with Java and PHP Laravel
+          across multiple products and domains, covering the full lifecycle from system design and
+          implementation to deployment, observability, and continuous improvement.
+        </li>
+        <li>
+          My core priorities are clean architecture, clear boundaries between services, and code that
+          other developers can quickly understand and extend. I care deeply about performance,
+          reliability, and designing APIs and databases that can grow with the business rather than
+          become bottlenecks.
+        </li>
+        <li>
+          Beyond coding, I enjoy leading and mentoring teams, reviewing designs, and improving
+          development processes (CI/CD, code review, release workflow) to help teams deliver high-quality
+          software efficiently and safely into production.
+        </li>
+      </div>
+
+      <div class="card about-profile">
+        <h4>Profile</h4>
+        <div class="about-profile-list">
+          <div class="about-profile-item">
+            <span class="label">Birthday</span>
+            <span class="value">05 January 1996</span>
+          </div>
+          <div class="about-profile-item">
+            <span class="label">Website</span>
+            <span class="value"><a href="https://dangtrongphu996.github.io" target="_blank" rel="noopener">dangtrongphu996.github.io</a></span>
+          </div>
+          <div class="about-profile-item">
+            <span class="label">Phone</span>
+            <span class="value"><a href="tel:+84902844839">(+84) 817933393</a></span>
+          </div>
+          <div class="about-profile-item">
+            <span class="label">City</span>
+            <span class="value">Ho Chi Minh City, Viet Nam</span>
+          </div>
+          <div class="about-profile-item">
+            <span class="label">Age</span>
+            <span class="value">29</span>
+          </div>
+          <div class="about-profile-item">
+            <span class="label">Email</span>
+            <span class="value"><a href="mailto:dangphucdangphuc996@gmail.com">dangphucdangphuc996@gmail.com</a></span>
+          </div>
+          <div class="about-profile-item">
+            <span class="label">Status</span>
+            <span class="value status-open">Open to work</span>
+          </div>
+          <div class="about-profile-item">
+            <span class="label">Freelance</span>
+            <span class="value">Available</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -170,6 +225,15 @@
   <footer>
     © 2025 Dang Trong Phu
   </footer>
+
+  <script>
+    function toggleNav() {
+      var nav = document.getElementById('nav-links');
+      if (nav) {
+        nav.classList.toggle('open');
+      }
+    }
+  </script>
 
 </body>
 </html>

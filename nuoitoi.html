@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>🌱 Nuôi Tôi 🌱</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">🌱 Nuôi Tôi 🌱</div>
+      <button class="nav-toggle" type="button" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="nuoitoi.html">Home</a></li>
+        <li><a href="#why">Tại sao?</a></li>
+        <li><a href="#compare">So sánh</a></li>
+        <li><a href="#usage">Tôi dùng tiền vào đâu?</a></li>
+        <li><a href="#donate" class="btn">Nuôi tôi</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="section nuoitoi-hero" id="top">
+    <div class="nuoitoi-hero-main card">
+      <h1>🌱 NUÔI TÔI 🌱</h1>
+      <p class="nuoitoi-tagline">
+        <strong>HÃY NUÔI TÔI.</strong> Tôi hứa sao kê đầy đủ! 💯
+      </p>
+      <div class="nuoitoi-hero-actions">
+        <a href="#donate" class="btn">Tôi muốn nuôi bạn!</a>
+        <a href="#why" class="btn outline">Xem cam kết</a>
+      </div>
+      <div class="nuoitoi-hero-stats">
+        <div class="nuoitoi-stat">
+          <span class="label">📊 Sao kê realtime</span>
+          <span class="value">Cập nhật từng giây</span>
+        </div>
+        <div class="nuoitoi-stat">
+          <span class="label">🔍 Minh bạch 1000%</span>
+          <span class="value">Bill chi tiết bất cứ món đồ nào</span>
+        </div>
+        <div class="nuoitoi-stat">
+          <span class="label">💬 Phản hồi siêu nhanh</span>
+          <span class="value">Bất cứ lúc nào</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="section" id="why">
+    <h3>Tại sao nên nuôi tôi?</h3>
+    <div class="nuoitoi-grid">
+      <div class="card">
+        <h4>📊 Sao Kê Realtime</h4>
+        <p>Cập nhật từng giây! Còn nhanh hơn cả tốc độ bạn chuyển tiền!</p>
+      </div>
+      <div class="card">
+        <h4>🔍 Minh Bạch 1000%</h4>
+        <p>Hơn cả 100%! Tôi còn báo cáo cả việc mua ly trà sữa!</p>
+      </div>
+      <div class="card">
+        <h4>💸 Chi Tiêu Hợp Lý</h4>
+        <p>Không mua xe hơi, nhà cửa. Chỉ ăn cơm với mì tôm thôi!</p>
+      </div>
+      <div class="card">
+        <h4>💬 Phản Hồi Siêu Nhanh</h4>
+        <p>Hỏi tôi ăn gì bất cứ lúc nào, kể cả 1h sáng (nếu không ngủ quên 😴)</p>
+      </div>
+    </div>
+
+    <div class="card nuoitoi-commit">
+      <h4>🎪 Cam kết vàng của tôi</h4>
+      <ul>
+        <li>📅 Sao kê mỗi ngày lúc 9h sáng, đều như vắt chanh (kể cả Chủ Nhật &amp; Lễ).</li>
+        <li>🔍 Không giấu giếm: từ tô phở 25k đến hộp sữa chua 5k đều được ghi chép tỉ mỉ.</li>
+        <li>🧾 Có hóa đơn chứng từ: chụp bill, quét mã vạch, lưu biên lai đầy đủ.</li>
+        <li>📹 Video unboxing: mở từng gói mì tôm cho anh chị xem.</li>
+        <li>📞 Hotline 24/7: hỏi tôi ăn gì bất cứ lúc nào.</li>
+        <li>🚫 Không block: hỏi khó đến mấy cũng trả lời, không "đã xem" rồi im lặng!</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- COMPARE -->
+  <section class="section light" id="compare">
+    <h3>So sánh với "người khác"</h3>
+    <div class="nuoitoi-compare">
+      <div class="card">
+        <h4>❌ Người khác</h4>
+        <ul>
+          <li>⏳ Sao kê sau 3 năm (hoặc không bao giờ).</li>
+          <li>🧊 File Excel blur mờ như ảnh ma.</li>
+          <li>➗ Số liệu "làm tròn" theo kiểu 1 + 1 = 3.</li>
+          <li>🙈 Block người hỏi nhanh như chớp (không trả lời).</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>✅ Nuôi tôi</h4>
+        <ul>
+          <li>⚡ Sao kê trước khi tiêu (để anh chị duyệt).</li>
+          <li>📊 File Excel 4K Ultra HD, có chữ ký điện tử.</li>
+          <li>✅ Số liệu chính xác đến từng đồng.</li>
+          <li>💬 Trả lời inbox nhanh hơn cả chatbot.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- USAGE -->
+  <section class="section" id="usage">
+    <h3>Tôi sẽ dùng tiền vào đâu?</h3>
+    <div class="nuoitoi-usage card">
+      <ul>
+        <li><strong>40%</strong> - Ăn uống (Cơm, mì tôm, trứng, rau. KHÔNG có tôm hùm!).</li>
+        <li><strong>20%</strong> - Điện nước internet (Để sao kê cho anh chị).</li>
+        <li><strong>15%</strong> - Thuê nhà (Phòng trọ 15m², không phải penthouse).</li>
+        <li><strong>10%</strong> - Y tế (Thuốc cảm, vitamin C, khẩu trang).</li>
+        <li><strong>10%</strong> - Học tập nâng cao (Sách, khóa học online để sao kê tốt hơn).</li>
+        <li><strong>5%</strong> - Giải trí (Netflix? Không! Chỉ Youtube miễn phí thôi!).</li>
+      </ul>
+      <p class="nuoitoi-note">📊 Biểu đồ chi tiết có thể cập nhật hàng ngày trên website.</p>
+    </div>
+  </section>
+
+  <!-- DONATE -->
+  <section class="section light" id="donate">
+    <div class="nuoitoi-donate">
+      <div class="card nuoitoi-qr-box">
+        <h4>💳 DONATE NGAY ĐI, NẾU BẠN ĐÃ CƯỜI!</h4>
+        <p>Bấm nút dưới đây nếu bạn thực sự muốn "NUÔI TÔI" 👀</p>
+        <button type="button" class="btn" onclick="toggleQR()">🎁 TÔI MUỐN NUÔI BẠN!</button>
+        <div id="nuoitoi-qr-content" class="nuoitoi-qr-content hidden">
+          <p>Quét mã QR này để nuôi tôi (và nhận bản sao kê ngay lập tức!)</p>
+          <img src="qr-donate.png" alt="QR Donate Nuôi Tôi" class="nuoitoi-qr-image">
+          <p class="nuoitoi-note">⚡ Chuyển xong là có sao kê ⚡</p>
+        </div>
+      </div>
+      <div class="card nuoitoi-message">
+        <h4>🎤 Lời nhắn từ trái tim</h4>
+        <p>
+          Trong thời đại mà <strong>"từ thiện"</strong> đã trở thành từ nhạy cảm,
+          tôi xin khẳng định: <strong>HÃY NUÔI TÔI!</strong>
+        </p>
+        <p>
+          Tôi nghèo, tôi cần tiền, nhưng tôi <strong>KHÔNG MẤT LƯƠNG TÂM!</strong>
+          Mỗi đồng tiền các bạn gửi, tôi sẽ chi tiêu rõ ràng, minh bạch như bụng đói của tôi vậy! 😭
+        </p>
+        <p>
+          <em>P/S: Tôi hứa sẽ không mua xe hơi bằng tiền donate. Vì... tôi chưa có bằng lái! 🚗❌</em>
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    © 2025 Dang Trong Phu • Nuôi Tôi
+    <div class="nuoitoi-disclaimer-bar">
+      <p class="nuoitoi-disclaimer">
+        ⚠️ DISCLAIMER: Đây là trang mang tính chất HÀI HƯỚC. Mọi nội dung đều mang tính giải trí, không nhằm mục đích xúc phạm hay chỉ trích bất kỳ cá nhân/tổ chức nào.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      var nav = document.getElementById('nav-links');
+      if (nav) {
+        nav.classList.toggle('open');
+      }
+    }
+
+    function toggleQR() {
+      var box = document.getElementById('nuoitoi-qr-content');
+      if (box) {
+        box.classList.toggle('hidden');
+      }
+    }
+  </script>
+</body>
+</html>
+
+
