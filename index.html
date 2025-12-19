@@ -1,40 +1,175 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Đặng Trọng Phú | CV</title>
+  <title>Dang Trong Phu | Backend Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
+
 <body>
-  <div class="container">
-    <img src="PhuDT-DangTrongPhu.jpg" alt="Đặng Trọng Phú" class="avatar" />
 
-    <h1>Đặng Trọng Phú</h1>
-    <p class="title">Software Developer</p>
-
-    <section>
-      <h2>👋 Giới thiệu</h2>
-      <p>
-        Tôi là lập trình viên, yêu thích công nghệ, mong muốn phát triển sự nghiệp
-        theo hướng backend / fullstack.
-      </p>
-    </section>
-
-    <section>
-      <h2>🛠 Kỹ năng</h2>
-      <ul>
-        <li>PHP / Laravel</li>
-        <li>Python</li>
-        <li>Docker</li>
-        <li>AWS cơ bản</li>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Dang Trong Phu - Backend Developer</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="btn">Contact</a></li>
       </ul>
-    </section>
+    </div>
+  </nav>
 
-    <section>
-      <h2>📞 Liên hệ</h2>
-      <p>Email: yourmail@gmail.com</p>
-      <p>GitHub: <a href="https://github.com/dangtrongphu" target="_blank">dangtrongphu</a></p>
-    </section>
-  </div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-badge">Backend • Java • PHP Laravel</span>
+  
+      <h1>Dang Trong Phu</h1>
+  
+      <h2>
+        Senior Backend Developer <br>
+        <span>& Team Lead</span>
+      </h2>
+  
+      <p class="hero-desc">
+        Senior Backend Developer with 7+ years of experience in Java and PHP Laravel.
+        Specialized in building scalable backend systems, leading engineering teams,
+        and designing CI/CD pipelines for high-traffic production environments.
+      </p>
+  
+      <div class="hero-buttons">
+        <a href="#contact" class="btn">Contact Me</a>
+        <a href="#projects" class="btn outline">View Projects</a>
+      </div>
+    </div>
+  
+    <div class="hero-image">
+      <img src="PhuDT-DangTrongPhu.jpg" alt="Dang Trong Phu">
+    </div>
+  </section>
+  
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h3>About Me</h3>
+    <div class="card">
+      <p>
+        I focus on building backend systems that are maintainable, scalable, and easy to evolve.
+        My experience covers the full development lifecycle, from system design and implementation
+        to deployment, monitoring, and long-term maintenance.
+        
+        Beyond coding, I enjoy working with teams, mentoring developers, and improving development
+        processes to help deliver reliable software efficiently.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section light">
+    <h3>Technical Skills</h3>
+    <div class="skills-grid">
+      <span>Java</span>
+      <span>Spring Boot</span>
+      <span>PHP Laravel</span>
+      <span>MySQL</span>
+      <span>PostgreSQL</span>
+      <span>Docker</span>
+      <span>AWS</span>
+      <span>CI/CD</span>
+      <span>Nginx</span>
+      <span>Git</span>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <h3>Experience</h3>
+
+    <div class="card">
+      <h4>PHP Laravel Team Lead – EC Admin (Japan)</h4>
+      <span>Nov 2024 – Apr 2025</span>
+      <p>
+        Led a team of 15 developers to build and maintain a regional e-commerce admin system.
+        Designed RBAC, optimized performance, and ensured system stability.
+      </p>
+    </div>
+
+    <div class="card">
+      <h4>Java Team Lead – Gettii</h4>
+      <span>Apr 2022 – Nov 2024</span>
+      <p>
+        Managed and enhanced a large-scale ticket selling system,
+        improved availability, and mentored junior developers.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section light">
+    <h3>Projects</h3>
+    <div class="projects-grid">
+      <div class="card">
+        <h4>EC Admin System</h4>
+        <p>Large-scale e-commerce admin system for Japan market.</p>
+      </div>
+      <div class="card">
+        <h4>Gettii Ticket System</h4>
+        <p>High-traffic ticket selling platform built with Java.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h3>Contact</h3>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-details">
+            <h4>Address</h4>
+            <p>Hiep Binh Street, Hiep Binh ward, Ho Chi Minh City</p>
+          </div>
+        </div>
+  
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact-details">
+            <h4>Phone</h4>
+            <p><a href="tel:0817933393">0817 933 393</a></p>
+          </div>
+        </div>
+  
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-details">
+            <h4>Email</h4>
+            <p><a href="mailto:dangphucdangphuc996@gmail.com">dangphucdangphuc996@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d411.8869702219404!2d106.7260223820172!3d10.845607384915581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527d0a30962a5%3A0x5d4d4e5ffc439c3e!2zxJAuIEhp4buHcCBCw6xuaCwgVGjhu6cgxJDhu6ljLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1766117923052!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section><!-- End Contact Section -->
+
+  <footer>
+    © 2025 Dang Trong Phu
+  </footer>
+
 </body>
 </html>
