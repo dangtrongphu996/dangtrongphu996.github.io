@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+.container {
+  max-width: 800px;
+  background: white;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.avatar {
+  width: 120px;
+  border-radius: 50%;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+.title {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+section {
+  margin-top: 25px;
+}
