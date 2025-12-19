@@ -4,6 +4,23 @@
   <meta charset="UTF-8" />
   <title>🌱 Nuôi Tôi 🌱</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dangtrongphu996.github.io/nuoitoi.html" />
+  <meta property="og:title" content="🌱 Nuôi Tôi 🌱 - Minh bạch 1000%!" />
+  <meta property="og:description" content="Hãy NUÔI TÔI - Minh bạch 1000%! Hứa sao kê và giải ngân rõ ràng. Sao kê realtime, minh bạch đến từng đồng!" />
+  <meta property="og:image" content="https://dangtrongphu996.github.io/nuoitoi.gif" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://dangtrongphu996.github.io/nuoitoi.html" />
+  <meta name="twitter:title" content="🌱 Nuôi Tôi 🌱 - Minh bạch 1000%!" />
+  <meta name="twitter:description" content="Hãy NUÔI TÔI - Minh bạch 1000%! Hứa sao kê và giải ngân rõ ràng." />
+  <meta name="twitter:image" content="https://dangtrongphu996.github.io/nuoitoi.gif" />
+  
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -13,7 +30,10 @@
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="nav-container">
-      <div class="logo">🌱 Nuôi Tôi 🌱</div>
+      <div class="logo">
+        <img src="nuoitoi.gif" alt="Nuôi Tôi logo" class="logo-image">
+        <span class="logo-text">🌱 Nuôi Tôi 🌱</span>
+      </div>
       <button class="nav-toggle" type="button" onclick="toggleNav()">
         <span></span>
         <span></span>
@@ -163,13 +183,20 @@
     </div>
   </section>
   <footer>
-    © 2025 Dang Trong Phu • Nuôi Tôi
+
     <div class="nuoitoi-disclaimer-bar">
       <p class="nuoitoi-disclaimer">
         ⚠️ DISCLAIMER: Đây là trang mang tính chất HÀI HƯỚC. Mọi nội dung đều mang tính giải trí, không nhằm mục đích xúc phạm hay chỉ trích bất kỳ cá nhân/tổ chức nào.
       </p>
     </div>
+    <p class="nuoitoi-copyright"></p>© 2025 Nuôi Tôi</p>
   </footer>
+
+  <!-- FAB Share Button -->
+  <button class="fab-share" id="fab-share">
+    <span class="icon">🔗</span>
+    <span class="label">Chia sẻ <span class="br-m"></span> dự án</span>
+  </button>
 
   <script>
     function toggleNav() {
@@ -185,6 +212,45 @@
         box.classList.toggle('hidden');
       }
     }
+
+    // Share button functionality
+    (function(){
+      const btn = document.getElementById('fab-share');
+      if(!btn) return;
+      btn.addEventListener('click', function(){
+        let shareUrl = window.location.href;
+        
+        // Kiểm tra nếu đang ở file:// hoặc localhost, dùng GitHub Pages URL
+        if (shareUrl.startsWith('file://') || shareUrl.startsWith('http://localhost') || shareUrl.startsWith('http://127.0.0.1')) {
+          // Dùng GitHub Pages URL dựa trên tên repo
+          shareUrl = 'https://dangtrongphu996.github.io/nuoitoi.html';
+        }
+        // Đảm bảo URL có đầy đủ protocol
+        else if (!shareUrl.startsWith('http://') && !shareUrl.startsWith('https://')) {
+          shareUrl = "https://dangtrongphu996.github.io/nuoitoi.html";
+        }
+        
+        const shareText = 'Hãy NUÔI TÔI - Minh bạch 1000%! Hứa sao kê và giải ngân rõ ràng.';
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768;
+        
+        if (isMobile && navigator.share) {
+          navigator.share({ 
+            title: document.title, 
+            text: shareText, 
+            url: shareUrl 
+          }).catch(function(err) {
+            console.log('Share failed:', err);
+            // Fallback to Facebook share
+            const fb = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(shareUrl);
+            window.open(fb, '_blank', 'width=600,height=400');
+          });
+        } else {
+          // Facebook share với popup
+          const fb = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(shareUrl);
+          window.open(fb, '_blank', 'width=600,height=400');
+        }
+      });
+    })();
   </script>
 </body>
 </html>
